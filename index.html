@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top World Marathons</title>
+    <meta name="description" content="World Top Marathons WDD330">
+    <meta name="author" content="Erick Flores WDD330">
+    <meta property="og:title" content="World Top Marathons">
+    <meta property="og:description" content="Top Marathons for runners">
+    <meta property="og:image" content="https://www..github.io/wdd330/images/hero900">
+    <meta property="og:url" content="https://ef10res.github.io/wdd330/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/favicon-runner.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header id="main-header">
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="./races.html">Marathons</a></li>
+            <li><a href="./sydney.html">Sydney<span>new</span></a></li>
+            <li><a href="./join.html">Sign-up</a></li>
+        </ul>
+    </nav>
+    <main>
+        <picture>
+            <source media="(width < 800px)" srcset="./images/hero700.jpg">
+            <source media="(width < 491px)" srcset="./images/hero350.jpg">
+            <source media="(width >= 801px)" srcset="./images/hero900.jpg">
+            <img src="./images/hero900.jpg" alt="Hero marthon picture" loading="lazy">
+        </picture>
+        <a href="join.html">Info</a>
+        <h1>Home</h1>
+        <section id="home-grid">
+            <div id="races-main">
+                <h2>7 Top World Marathons</h2>
+                <img src="./images/main1.jpg" alt="marathon picture" loading="lazy">
+                <a href="./races.html">Explore Races</a>
+            </div>
+            <div id="join">
+                <h2>Race!</h2>
+                <img src="./images/main2.jpg" alt="crossing the finish line picture" loading="lazy">
+                <a href="./join.html">Register</a>
+            </div>
+            <div id="sydney">
+                <h2>New Marathon Race</h2>
+                <img src="./images/main3.jpg" alt="Sydney marthon picture" loading="lazy">
+                <a href="./sydney.html">Sydney</a>
+            </div>
+        </section>
+    </main>
+    <footer id="main-footer">
+
+    </footer>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

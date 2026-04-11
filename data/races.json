@@ -1,0 +1,74 @@
+{
+    "races": [
+        {
+            "name": "Tokyo",
+            "country": "Japan",
+            "record": "2:02:40",
+            "runner":"Eliud Kipchoge (Kenya)",
+            "people": "35460",
+            "inauguration": "2007",
+            "spectators": "1000000",
+            "picture": "./images/tokyo.jpg"
+        },
+        {
+            "name": "Boston",
+            "country": "Massachussets, USA",
+            "record": "2:03:02",
+            "runner": "Geoffrey Mutai (Kenya)",
+            "people": "35868",
+            "inauguration": "1897",
+            "spectators": "500000",
+            "picture": "./images/boston.jpg"
+        },
+        {
+            "name": "London",
+            "country": "England",
+            "record": "2:01:25",
+            "runner": "Kelvin Kiptum (Kenya)",
+            "people": "43965",
+            "inauguration": "1981",
+            "spectators": "750000",
+            "picture": "./images/london.jpg"
+        },
+        {
+            "name": "Sydney",
+            "country": "Australia",
+            "record": "2:06:06",
+            "runner": "Hailemaryam Kiros (Ethiopia)",
+            "people": "20072",
+            "inauguration": "2001",
+            "spectators": "125000",
+            "picture": "./images/sydney.jpg"
+        },
+        {
+            "name": "Berlin",
+            "country": "Germany",
+            "record": "2:01:09",
+            "runner": "Eliud Kipchoge (Kenya)",
+            "people": "46983",
+            "inauguration": "1974",
+            "spectators": "1000000",
+            "picture": "./images/berlin.jpg"
+        },
+        {
+            "name": "Chicago",
+            "country": "Illinois, USA",
+            "record": "2:03:45",
+            "runner": "Dennis Kimetto (Kenya)",
+            "people": "45932",
+            "inauguration": "1977",
+            "spectators": "1700000",
+            "picture": "./images/chicago.jpg"
+        },
+        {
+            "name": "New York",
+            "country": "New York, USA",
+            "record": "2:05:06",
+            "runner": "Geoffrey Mutai (Kenya)",
+            "people": "53520",
+            "inauguration": "1970",
+            "spectators": "1000000+",
+            "picture": "./images/newYork.jpg"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top World Marathons</title>
+    <meta name="description" content="World Top Marathons WDD330">
+    <meta name="author" content="Erick Flores WDD330">
+    <meta property="og:title" content="World Top Marathons">
+    <meta property="og:description" content="Top Marathons for runners">
+    <meta property="og:image" content="https://www..github.io/wdd330/images/hero900">
+    <meta property="og:url" content="https://ef10res.github.io/wdd330/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/favicon-runner.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script src="scripts/races.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Marathons</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./sydney.html">Sydney<span>new</span></a></li>
+            <li><a href="./join.html">Sign-up</a></li>
+        </ul>
+    </nav>
+    <main>
+        <picture>
+            <source media="(width < 800px)" srcset="./images/hero700.jpg">
+            <source media="(width < 491px)" srcset="./images/hero350.jpg">
+            <source media="(width >= 801px)" srcset="./images/hero900.jpg">
+            <img src="./images/hero900.jpg
+            " alt="Hero marthon races picture" loading="lazy">
+        </picture>
+        <a href="join.html">Info</a>
+        <h1>Marathons</h1>
+        <section id="races-list">
+        
+        </section>
+    </main>
+    <footer id="main-footer">
+
+    </footer>
+</body>
+
+</html>

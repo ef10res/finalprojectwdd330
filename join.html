@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top World Marathons</title>
+    <meta name="description" content="World Top Marathons WDD330">
+    <meta name="author" content="Erick Flores WDD330">
+    <meta property="og:title" content="World Top Marathons">
+    <meta property="og:description" content="Top Marathons for runners">
+    <meta property="og:image" content="https://www..github.io/wdd330/images/hero900">
+    <meta property="og:url" content="https://ef10res.github.io/wdd330/index.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="./images/favicon-runner.ico">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/small.css">
+    <link rel="stylesheet" href="./styles/medium.css">
+    <link rel="stylesheet" href="./styles/large.css">
+    <script type="module" src="scripts/main.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+</head>
+
+<body>
+    <header id="main-header">
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Sign-up</a></li>
+            <li><a href="./races.html">Marathons</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./sydney.html">Sydney</a></li>
+        </ul>
+    </nav>
+    <main>
+        <picture>
+            <source media="(width < 800px)" srcset="./images/hero700.jpg">
+            <source media="(width < 491px)" srcset="./images/hero350.jpg">
+            <source media="(width >= 801px)" srcset="./images/hero900.jpg">
+            <img src="./images/hero900.jpg" alt="Hero marthon picture" loading="lazy">
+        </picture>
+        <main class="join">
+            <h1>Sign-up</h1>
+            <section class="form">
+                <form method="get" action="thanks.html">
+                    <fieldset>
+                        <label class="name">Your Name
+                            <input type="text" id="name" name="name" title="Enter your given name" autocomplete="given-name"
+                                required>
+                        </label>
+                        <label class="last">Your Last Name
+                            <input type="text" id="last" name="last" title="Enter your last name" autocomplete="family-name"
+                                required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label class="eMail">Email Address
+                            <input type="email" name="eMail" title="Enter your email" autocomplete="email"
+                                placeholder="floreserick10@gmail.com" required>
+                        </label>
+                        <label class="phone">Phone number
+                            <input type="tel" name="phone" title="Enter your phone number" autocomplete="tel" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <label class="city">City
+                            <input type="text" name="city" title="city" required>
+                        </label>
+                        <label>Marathon to register
+                            <select id="raceSel" name="raceSel" required>
+                                <option value="" disabled selected>Select a Race...</option>
+                            </select>
+                        </label>
+                        <label>Leave a comment
+                            <textarea title="Enter reason of interest" name="comment"></textarea>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <button class="submit" type="submit">Race ready!</button>
+                    </fieldset>
+                </form>
+            </section>
+    </main>
+    <footer id="main-footer">
+
+    </footer>
+</body>
+
+</html>
