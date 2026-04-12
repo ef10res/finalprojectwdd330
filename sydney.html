@@ -24,6 +24,8 @@
     <script type="module" src="scripts/main.js" defer></script>
     <script src="scripts/api.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyArQnKaWafb0p5h2fy8TC40FFrdvNWw8q0&libraries=places"></script>
+    <script src="scripts/modal.js" defer></script>
 </head>
 
 <body>
@@ -54,7 +56,10 @@
         </p>
         <button id="info">Info</button>
         <dialog id="dialogBox">
-            <div id="sydney"></div>
+            <div id="sydney">
+                <div id="map" style="height:300px;"></div>
+                <div id="place-info"></div>
+            </div>
             <button id="closeButton">Close</button>
         </dialog>
         <section class="weather">
