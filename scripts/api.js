@@ -1,5 +1,5 @@
-const key = "c6a0627c84234f4398b105856251310";
-const apiURL = `http://api.weatherapi.com/v1/current.json?key=c6a0627c84234f4398b105856251310&q=sydney&aqi=no`;
+const weatherKey = "c6a0627c84234f4398b105856251310";
+const weatherURL = `http://api.weatherapi.com/v1/current.json?key=c6a0627c84234f4398b105856251310&q=sydney&aqi=no`;
 const forecastURL = `http://api.weatherapi.com/v1/forecast.json?key=c6a0627c84234f4398b105856251310&q=sydney&days=3&aqi=no&alerts=no`;
 
 const image = document.querySelector("#image");
@@ -10,9 +10,9 @@ const weatherToday = document.querySelector("#weather-today");
 const weatherTomorrow = document.querySelector("#weather-tomorrow");
 const weatherAfterTomorrow = document.querySelector("#weather-aftertomorrow");
 
-async function apiFetch() {
+async function weatherFetch() {
     try {
-        const response = await fetch(apiURL);
+        const response = await fetch(weatherURL);
         if (response.ok) {
             const data = await response.json();
             displayResults(data);
@@ -60,5 +60,8 @@ function displayForecastResults(data) {
     weatherAfterTomorrow.innerHTML = ` H: ${Math.round(data.list[2].main.temp_max)}&#176;F, L: ${Math.round(data.list[2].main.temp_min)}&#176;F, ${overTomorrow}`;
 }
 
-apiFetch();
+weatherFetch();
+apiforecastFetch();
+
+const geoKey = AIzaSyArQnKaWafb0p5h2fy8TC40FFrdvNWw8q0
 
