@@ -192,7 +192,6 @@ textarea {
 
 #map {
     height: 400px;
-    /* Or any height */
     width: 100%;
 }
 
@@ -201,13 +200,16 @@ textarea {
     margin: 0 auto;
     width: 300px;
     align-items: center;
-    justify-content: center;
+    background-color: darkblue;
+    color: white;
+    font-size: 20px;
     animation: pulse 1.5s infinite ease-in-out;
 }
 
 #info:hover {
-    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00);
+    background: linear-gradient(45deg, #0073CF, silver, #fffb00, #48ff00);
     background-size: 400%;
+    color: black;
     animation: glowing 20s linear infinite;
 }
 
