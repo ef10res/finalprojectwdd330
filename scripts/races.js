@@ -13,6 +13,7 @@ const raceList = document.getElementById("races-list");
 const displayRaces = (races) => {
     races.forEach((race) => {
         let card = document.createElement('div');
+        card.setAttribute('class', 'card');
         let title = document.createElement('h2');
         let img = document.createElement('img');
         let desc = document.createElement('p');

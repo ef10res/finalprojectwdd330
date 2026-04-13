@@ -98,8 +98,6 @@ h2 {
 }
 
 button {
-    display: flex;
-    flex-wrap: wrap;
     display: block;
     align-items: center;
     width: 100%;
@@ -113,6 +111,14 @@ div {
     border-radius: 10px;
     background-color: #ddd;
     width: 100%;
+}
+
+.card:hover {
+    animation: zoom-pulse 2s ease-in-out infinite;
+}
+
+#races-list>div:hover {
+    animation: zoomIn 2s ease-out forwards;
 }
 
 h3 {
@@ -156,6 +162,11 @@ textarea {
 .submit {
     width: 190px;
     margin: auto;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+.submit:hover {
+    animation: shake 0.5s ease-in-out;
 }
 
 #flag {
@@ -183,4 +194,105 @@ textarea {
     height: 400px;
     /* Or any height */
     width: 100%;
+}
+
+#info {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+#info:hover {
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00);
+    background-size: 400%;
+    animation: glowing 20s linear infinite;
+}
+
+.page {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    animation: slide-in-left 1s ease-out forwards;
+}
+
+.page:hover {
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+a {
+    text-decoration: none;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(1);
+        /* Starting size */
+    }
+
+    100% {
+        transform: scale(1.5);
+        /* Final zoomed size */
+    }
 }
