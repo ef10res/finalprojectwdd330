@@ -32,7 +32,7 @@
 
     #races-main {
         grid-column: 1/3;
-        grid-template-rows: 1/2;
+        grid-row: 1/2;
     }
 
     #join {
@@ -48,8 +48,6 @@
     #races-list {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    
+    } 
 
 }

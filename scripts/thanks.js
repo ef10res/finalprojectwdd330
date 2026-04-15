@@ -2,6 +2,7 @@ const getString = window.location.search;
 
 const runnerInfo = new URLSearchParams(getString);
 
+//Display sign up summary
 document.querySelector('#results').innerHTML = `
 <p>Summary for ${runnerInfo.get('name')} ${runnerInfo.get('last')}</p>
 <p>Thanks for signing up. You will get</p>

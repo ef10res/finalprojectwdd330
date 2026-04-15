@@ -1,5 +1,7 @@
+// Json file
 const file = './data/races.json';
 
+// get data from json
 async function getRacesData() {
     const response = await fetch(file);
     const data = await response.json();
@@ -8,6 +10,7 @@ async function getRacesData() {
 
 getRacesData();
 
+// add race options to form
 const createSelect = races => {
     const selectElement = document.querySelector("#raceSel");
     if (!selectElement) {

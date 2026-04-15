@@ -48,14 +48,15 @@ async function loadPlaceData() {
         const attributes = {
             name: place.name,
             address: place.formatted_address,
-            lat: place.geometry.location.lat(), // Note: lat and lng are functions in the SDK
+            lat: place.geometry.location.lat(), 
             lng: place.geometry.location.lng(),
             rating: place.rating,
             totalRatings: place.user_ratings_total,
             website: place.website,
             phone: place.formatted_phone_number
         };
-
+        
+        // Show attributes
         document.getElementById("place-info").innerHTML = `
       <h2>${attributes.name}</h2>
       <p><strong>Address:</strong> ${attributes.address}</p>
@@ -79,7 +80,7 @@ async function loadPlaceData() {
             map: map,
         });
 
-        // fix map rendering inside modal
+        // fix map rendering in modal
         setTimeout(() => {
             google.maps.event.trigger(map, "resize");
             map.setCenter({ lat: attributes.lat, lng: attributes.lng });

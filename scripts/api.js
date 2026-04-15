@@ -1,7 +1,9 @@
+//Key and endpoints
 const weatherKey = "c6a0627c84234f4398b105856251310";
 const weatherURL = `https://api.weatherapi.com/v1/current.json?key=c6a0627c84234f4398b105856251310&q=sydney&aqi=no`;
 const forecastURL = `https://api.weatherapi.com/v1/forecast.json?key=c6a0627c84234f4398b105856251310&q=sydney&days=3&aqi=no&alerts=no`;
 
+// Variables
 const image = document.querySelector("#image");
 const race = document.querySelector("#race");
 const description = document.querySelector("#description");
@@ -10,6 +12,7 @@ const weatherToday = document.querySelector("#weather-today");
 const weatherTomorrow = document.querySelector("#weather-tomorrow");
 const weatherAfterTomorrow = document.querySelector("#weather-aftertomorrow");
 
+// Fetch current weather data
 async function weatherFetch() {
     try {
         const response = await fetch(weatherURL);
@@ -24,6 +27,7 @@ async function weatherFetch() {
     }
 }
 
+//Display results in the weather div
 function displayResults(data) {
     race.innerHTML = data.location.name;
     description.innerHTML = data.current.condition.text;
@@ -33,6 +37,7 @@ function displayResults(data) {
     image.setAttribute('alt', data.current.condition.text)
 }
 
+// Fetch weather forecast
 async function apiforecastFetch() {
     try {
         const response = await fetch(forecastURL);

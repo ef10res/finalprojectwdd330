@@ -1,5 +1,6 @@
 const file = './data/races.json';
 
+// fetch json data
 async function getRacesData() {
     const response = await fetch(file);
     const data = await response.json();
@@ -10,6 +11,7 @@ getRacesData();
 
 const raceList = document.getElementById("races-list");
 
+// Show races cards
 const displayRaces = (races) => {
     races.forEach((race) => {
         let card = document.createElement('div');
