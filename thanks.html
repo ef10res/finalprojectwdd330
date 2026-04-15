@@ -22,8 +22,8 @@
     <link rel="stylesheet" href="./styles/medium.css">
     <link rel="stylesheet" href="./styles/large.css">
     <script type="module" src="scripts/main.js" defer></script>
-    <script src="scripts/races.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/thanks.js" defer></script>
 </head>
 
 <body>
@@ -31,9 +31,9 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">Marathons</a></li>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./sydney.html">Sydney</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="./races.html">Marathons</a></li>
+            <li><a href="./sydney.html">Sydney<span>new</span></a></li>
             <li><a href="./join.html">Sign-up</a></li>
         </ul>
     </nav>
@@ -42,18 +42,15 @@
             <source media="(width < 800px)" srcset="./images/hero700.jpg">
             <source media="(width < 491px)" srcset="./images/hero350.jpg">
             <source media="(width >= 801px)" srcset="./images/hero900.jpg">
-            <img src="./images/hero900.jpg
-            " alt="Hero marthon races picture" loading="lazy">
+            <img src="./images/hero900.jpg" alt="Hero marthon picture" loading="lazy">
         </picture>
-        <a href="join.html">Info</a>
-        <h1>Marathons</h1>
-        <section id="races-list">
-        
-        </section>
+        <h1>Thanks!</h1>
+        <div id="results"></div>
     </main>
     <footer id="main-footer">
 
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>

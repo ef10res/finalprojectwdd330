@@ -23,7 +23,6 @@ async function loadPlaceData() {
     };
 
     try {
-        // 2. Find the Place ID
         const searchData = await new Promise((resolve, reject) => {
             service.findPlaceFromQuery(searchRequest, (results, status) => {
                 if (status === google.maps.places.PlacesServiceStatus.OK) resolve(results);
@@ -33,7 +32,7 @@ async function loadPlaceData() {
 
         const placeId = searchData[0].place_id;
 
-        // 3. Get Details using the Place ID
+        // get details using the placeId
         const detailsRequest = {
             placeId: placeId,
             fields: ['name', 'formatted_address', 'geometry', 'rating', 'user_ratings_total', 'website', 'formatted_phone_number']
@@ -46,7 +45,6 @@ async function loadPlaceData() {
             });
         });
 
-        // 4. Use the 'place' object as you did before
         const attributes = {
             name: place.name,
             address: place.formatted_address,
@@ -69,19 +67,19 @@ async function loadPlaceData() {
       </p>
     `;
 
-        // 🗺️ Create map
+        // create map
         const map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: attributes.lat, lng: attributes.lng },
             zoom: 16,
         });
 
-        // 📍 Marker
+        // marker
         new google.maps.Marker({
             position: { lat: attributes.lat, lng: attributes.lng },
             map: map,
         });
 
-        // 🔥 Fix map rendering inside modal
+        // fix map rendering inside modal
         setTimeout(() => {
             google.maps.event.trigger(map, "resize");
             map.setCenter({ lat: attributes.lat, lng: attributes.lng });

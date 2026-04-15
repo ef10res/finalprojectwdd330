@@ -52,12 +52,12 @@ function displayForecastResults(data) {
     // Get the forecast days array
     const days = data.forecast.forecastday;
 
-    // Get condition text using correct array indexing
+    // Put the information into variables
     let todayTxt = days[0].day.condition.text;
     let tomorrowTxt = days[1].day.condition.text;
     let afterTomorrowTxt = days[2].day.condition.text;
 
-    // Update HTML using WeatherAPI properties (maxtemp_f and mintemp_f)
+    // Display the array information for the arrays into the elements
     weatherToday.innerHTML = ` H: ${Math.round(days[0].day.maxtemp_f)}°F, L: ${Math.round(days[0].day.mintemp_f)}°F, ${todayTxt}`;
     weatherTomorrow.innerHTML = ` H: ${Math.round(days[1].day.maxtemp_f)}°F, L: ${Math.round(days[1].day.mintemp_f)}°F, ${tomorrowTxt}`;
     weatherAfterTomorrow.innerHTML = ` H: ${Math.round(days[2].day.maxtemp_f)}°F, L: ${Math.round(days[2].day.mintemp_f)}°F, ${afterTomorrowTxt}`;
